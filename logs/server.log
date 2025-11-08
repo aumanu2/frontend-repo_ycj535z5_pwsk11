@@ -3,37 +3,7 @@
 > vite
 
 
-  VITE v5.4.20  ready in 286 ms
+  VITE v5.4.20  ready in 279 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.2.114:3000/
-9:00:13 AM [vite] Pre-transform error: Transform failed with 1 error:
-/home/workspace/src/components/SalesChart.jsx:50:10: ERROR: Expected ";" but found ")"
-9:00:13 AM [vite] ✨ new dependencies optimized: lucide-react
-9:00:13 AM [vite] ✨ optimized dependencies changed. reloading
-9:00:14 AM [vite] Pre-transform error: Transform failed with 1 error:
-/home/workspace/src/components/SalesChart.jsx:50:10: ERROR: Expected ";" but found ")"
-The file does not exist at "/home/workspace/node_modules/.vite/deps/chunk-I4MZPW7S.js?v=35394813" which is in the optimize deps directory. The dependency might be incompatible with the dep optimizer. Try adding it to `optimizeDeps.exclude`.
-9:00:15 AM [vite] Internal server error: Transform failed with 1 error:
-/home/workspace/src/components/SalesChart.jsx:50:10: ERROR: Expected ";" but found ")"
-  Plugin: vite:esbuild
-  File: /home/workspace/src/components/SalesChart.jsx:50:10
-  
-  Expected ";" but found ")"
-  48 |    );
-  49 |  }
-  50 |  46,60,0.35)" />
-     |            ^
-  51 |                <stop offset="100%" stopColor="rgba(251,146,60,0.02)" />
-  52 |              </linearGradient>
-  
-      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
-      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
-      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
-      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
-      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
-      at Socket.emit (node:events:508:28)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
-      at Readable.push (node:internal/streams/readable:390:5)
-      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)

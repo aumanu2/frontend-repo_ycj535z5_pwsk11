@@ -176,6 +176,10 @@ function ExpenseTable({ cashTotal, rows, setRows }) {
     setNewRow({ name: '', amount: '' });
   };
 
+  const applyTemplate = (t) => {
+    setNewRow((prev) => ({ ...prev, name: t.name }));
+  };
+
   const exportCSV = () => {
     const header = ['Expense','Amount'];
     const body = rows.map(r => [r.name, r.amount]);
@@ -203,6 +207,11 @@ function ExpenseTable({ cashTotal, rows, setRows }) {
           <Download size={16}/> Export CSV
         </button>
       </div>
+
+      <div className="mb-3">
+        <TemplateSelector label="expense" templatesKey="ws_expense_templates" onApply={applyTemplate} />
+      </div>
+
       <div className="overflow-x-auto">
         <table className="min-w-full text-sm text-neutral-200">
           <thead>
